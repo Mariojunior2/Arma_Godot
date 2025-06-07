@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfm8ihn0lcafa"]
+
+[ext_resource type="PackedScene" uid="uid://beu2frm0ep0gg" path="res://caracteres/character_body_2d.tscn" id="1_8a1dw"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_8a1dw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_37cc2"]
+size = Vector2(1085, 412)
+
+[node name="word1" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_8a1dw")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_8a1dw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(95, 322)
+shape = SubResource("RectangleShape2D_37cc2")

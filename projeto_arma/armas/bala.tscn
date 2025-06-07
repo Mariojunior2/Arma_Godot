@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmtkg4aocn3px"]
+
+[ext_resource type="Script" uid="uid://ds8mdh0kkq2yg" path="res://armas/bala.gd" id="1_r0b1o"]
+[ext_resource type="Texture2D" uid="uid://b6qx3ynuawynb" path="res://armas/bala1.png" id="1_uucto"]
+
+[node name="Bala" type="Node2D"]
+script = ExtResource("1_r0b1o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.0155273, 0.000487964)
+rotation = 3.11018
+scale = Vector2(0.0999379, 0.1)
+texture = ExtResource("1_uucto")
